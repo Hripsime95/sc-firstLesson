@@ -1,28 +1,29 @@
 import styled from "styled-components";
 import { css } from "styled-components";
+import { myTheme } from "../styles/Theme.styled";
 
-type StyledBtnPropsType = {
-    color?: string,
-    fontSize?: string,
-    btnType: 'primary' | 'outlined'
+type BtnPropsType = {
+    primary?: boolean;
+    outlined?: boolean;
 }
 
-export const StyledBtn = styled.button<StyledBtnPropsType>`
-    border: none;
+export const StyledBtn = styled.button<BtnPropsType>`
     border-radius: 5px;
+    width: 86px;
+    height: 30px;
     padding: 5px 5px;
-    align-self: center;
-    font-size: ${props => props.fontSize};
-
-
-    ${props => props.btnType === 'outlined' && css<StyledBtnPropsType>`
-        background-color: transparent;
-        border: 2px solid red;
-        color: red;
+    font-size: 10px;
+    font-family: 'Inter';
+    
+    ${props => props.primary && css<BtnPropsType>`
+        border: none;
+        background-color: ${myTheme.colors.button.bgColor};
+        color: ${myTheme.colors.secondary}
     `}
 
-    ${props => props.btnType === 'primary' && css<StyledBtnPropsType>`
-        background-color: ${props => props.color || 'red'};
-        color: 'white';
+    ${props => props.outlined && css<BtnPropsType>`
+        border: 2px solid ${myTheme.colors.button.bgColor};
+        background-color: ${myTheme.colors.secondary};
+        color: ${myTheme.colors.button.textColor};
     `}
 `
