@@ -9,7 +9,7 @@ function App() {
       <Box>
         <Card>
           <RectangleImg src="/sc-firstLesson/public/Rectangle1.svg"/>
-          
+          <img src="/sc-firstLesson/public/Rectangle1.svg" alt="" />
           <section>
             
             <h3>Headline</h3>
