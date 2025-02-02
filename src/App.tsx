@@ -8,7 +8,7 @@ function App() {
     return (
       <Box>
         <Card>
-          <RectangleImg src="../public/Rectangle1.svg"/>
+          <RectangleImg src="/sc-firstLesson/public/Rectangle1.svg"/>
           
           <section>
             
