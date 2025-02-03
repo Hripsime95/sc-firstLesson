@@ -95,7 +95,7 @@ Error generating stack: `+o.message+`
     display: flex;
     justify-content: center;
     align-items: center;
-`;function Hh(){return Et.jsx(Wh,{children:Et.jsxs(Vh,{children:[Et.jsx(Bh,{src:"/Rectangle1.svg"}),Et.jsxs("section",{children:[Et.jsx("h3",{children:"Headline"}),Et.jsx("article",{children:"Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen."}),Et.jsx(uf,{primary:!0,children:"See more"}),Et.jsx(uf,{outlined:!0,children:"Save"})]})]})})}const Qh=Uh`
+`,Hh="/sc-firstLesson/assets/Rectangle1-C2Q_Zw-8.svg";function Qh(){return Et.jsx(Wh,{children:Et.jsxs(Vh,{children:[Et.jsx(Bh,{src:Hh}),Et.jsxs("section",{children:[Et.jsx("h3",{children:"Headline"}),Et.jsx("article",{children:"Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen."}),Et.jsx(uf,{primary:!0,children:"See more"}),Et.jsx(uf,{outlined:!0,children:"Save"})]})]})})}const Kh=Uh`
     *,
     *::before,
     *::after {
@@ -107,4 +107,4 @@ Error generating stack: `+o.message+`
     body{
         background-color: ${xt.colors.primary};
     }
-`;Ap.createRoot(document.getElementById("root")).render(Et.jsxs(Fh,{theme:xt,children:[Et.jsx(Hh,{}),Et.jsx(Qh,{})]}));
+`;Ap.createRoot(document.getElementById("root")).render(Et.jsxs(Fh,{theme:xt,children:[Et.jsx(Qh,{}),Et.jsx(Kh,{})]}));
